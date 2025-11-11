@@ -1,26 +1,23 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
     "rootDir": "./",
     "outDir": "./dist",
 
     // Environment Settings
-    "module": "nodenext",
+    "module": "nodenext",        // ESM for Node
     "target": "esnext",
-    "types": ["node"],            // <-- Added node types
-    "lib": ["esnext"],            // <-- For modern JS features
+    "types": ["node"],           // Node types (process, Buffer, etc.)
+    "lib": ["esnext"],           // Modern JS features
 
-    // Other Outputs
+    // Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    // Stricter Typechecking Options
+    // Stricter Typechecking
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-
-    // Style Options
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -28,10 +25,7 @@
 
     // Recommended Options
     "strict": true,
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
     "skipLibCheck": true
   }
 }
