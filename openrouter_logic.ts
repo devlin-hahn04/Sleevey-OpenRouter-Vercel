@@ -1,3 +1,5 @@
+//Hosting on vercel openrouter logic 
+
 import axios from "axios";
 
 export default async function handler(req: any, res: any){
